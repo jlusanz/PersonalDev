@@ -1,0 +1,60 @@
+/* márgenes y relleno */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Contenedor principal del reproductor */
+.player-container {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Estilo para la imagen de portada del álbum */
+.album-cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo para los botones */
+.btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #777;
+}
