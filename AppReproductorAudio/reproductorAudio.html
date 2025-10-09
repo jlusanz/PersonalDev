@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio</title>
+    <link rel="icon" type="image/png" href="favicon/musica.jpg" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1 class="title">Reproductor de Audio</h1>
+        
+        <!-- Imagen de portada del álbum -->
+        <img id="album-cover" class="album-cover" src="portada/cover1.jpg" alt="Portada de la canción">
+        
+        <!-- Texto para mostrar la canción actual -->
+        <p id="current-track">Pista actual: Pista 1</p>
+        
+        <!-- Controles del reproductor -->
+        <div class="controls">
+            <!-- Botones con iconos y texto -->
+            <button onclick="previousTrack()" class="btn" aria-label="Canción anterior">⏮️ Atrás</button>
+            <button onclick="playPause()" class="btn" aria-label="Reproducir/Pausar">▶️ Reproducir</button>
+            <button onclick="stopTrack()" class="btn" aria-label="Detener">⏹️ Parar</button>
+            <button onclick="nextTrack()" class="btn" aria-label="Canción siguiente">⏭️ Adelante</button>
+            <button onclick="shuffleTrack()" class="btn" aria-label="Reproducir aleatoriamente">🔀 Shuffle</button>
+        </div>
+    </div>
+    
+    <!-- Archivo de JavaScript que gestiona la funcionalidad -->
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
